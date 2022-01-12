@@ -3,8 +3,6 @@ import { solution } from "./words";
 export type CharStatus = "absent" | "present" | "correct";
 
 export type CharValue =
-  | "q"
-  | "w"
   | "e"
   | "r"
   | "t"
@@ -27,7 +25,6 @@ export type CharValue =
   | "ş"
   | "i"
   | "z"
-  | "x"
   | "c"
   | "v"
   | "b"
