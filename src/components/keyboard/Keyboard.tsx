@@ -26,45 +26,45 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
   return (
     <div>
       <div className="flex justify-center mb-1">
-        <Key value="Q" onClick={onClick} status={charStatuses["Q"]} />
-        <Key value="W" onClick={onClick} status={charStatuses["W"]} />
-        <Key value="E" onClick={onClick} status={charStatuses["E"]} />
-        <Key value="R" onClick={onClick} status={charStatuses["R"]} />
-        <Key value="T" onClick={onClick} status={charStatuses["T"]} />
-        <Key value="Y" onClick={onClick} status={charStatuses["Y"]} />
-        <Key value="U" onClick={onClick} status={charStatuses["U"]} />
-        <Key value="I" onClick={onClick} status={charStatuses["I"]} />
-        <Key value="O" onClick={onClick} status={charStatuses["O"]} />
-        <Key value="P" onClick={onClick} status={charStatuses["P"]} />
-        <Key value="Ğ" onClick={onClick} status={charStatuses["Ğ"]} />
-        <Key value="Ü" onClick={onClick} status={charStatuses["Ü"]} />
+        <Key value="q" onClick={onClick} status={charStatuses["q"]} />
+        <Key value="w" onClick={onClick} status={charStatuses["w"]} />
+        <Key value="e" onClick={onClick} status={charStatuses["e"]} />
+        <Key value="r" onClick={onClick} status={charStatuses["r"]} />
+        <Key value="t" onClick={onClick} status={charStatuses["t"]} />
+        <Key value="y" onClick={onClick} status={charStatuses["y"]} />
+        <Key value="u" onClick={onClick} status={charStatuses["u"]} />
+        <Key value="ı" onClick={onClick} status={charStatuses["ı"]} />
+        <Key value="o" onClick={onClick} status={charStatuses["o"]} />
+        <Key value="p" onClick={onClick} status={charStatuses["p"]} />
+        <Key value="ğ" onClick={onClick} status={charStatuses["ğ"]} />
+        <Key value="ü" onClick={onClick} status={charStatuses["ü"]} />
       </div>
       <div className="flex justify-center mb-1">
-        <Key value="A" onClick={onClick} status={charStatuses["A"]} />
-        <Key value="S" onClick={onClick} status={charStatuses["S"]} />
-        <Key value="D" onClick={onClick} status={charStatuses["D"]} />
-        <Key value="F" onClick={onClick} status={charStatuses["F"]} />
-        <Key value="G" onClick={onClick} status={charStatuses["G"]} />
-        <Key value="H" onClick={onClick} status={charStatuses["H"]} />
-        <Key value="J" onClick={onClick} status={charStatuses["J"]} />
-        <Key value="K" onClick={onClick} status={charStatuses["K"]} />
-        <Key value="L" onClick={onClick} status={charStatuses["L"]} />
-        <Key value="Ş" onClick={onClick} status={charStatuses["Ş"]} />
-        <Key value="İ" onClick={onClick} status={charStatuses["İ"]} />
+        <Key value="a" onClick={onClick} status={charStatuses["a"]} />
+        <Key value="s" onClick={onClick} status={charStatuses["s"]} />
+        <Key value="d" onClick={onClick} status={charStatuses["d"]} />
+        <Key value="f" onClick={onClick} status={charStatuses["f"]} />
+        <Key value="g" onClick={onClick} status={charStatuses["g"]} />
+        <Key value="h" onClick={onClick} status={charStatuses["h"]} />
+        <Key value="j" onClick={onClick} status={charStatuses["j"]} />
+        <Key value="k" onClick={onClick} status={charStatuses["k"]} />
+        <Key value="l" onClick={onClick} status={charStatuses["l"]} />
+        <Key value="ş" onClick={onClick} status={charStatuses["ş"]} />
+        <Key value="i" onClick={onClick} status={charStatuses["i"]} />
       </div>
       <div className="flex justify-center">
         <Key width={65.4} value="ENTER" onClick={onClick}>
           Enter
         </Key>
-        <Key value="Z" onClick={onClick} status={charStatuses["Z"]} />
-        <Key value="X" onClick={onClick} status={charStatuses["X"]} />
-        <Key value="C" onClick={onClick} status={charStatuses["C"]} />
-        <Key value="V" onClick={onClick} status={charStatuses["V"]} />
-        <Key value="B" onClick={onClick} status={charStatuses["B"]} />
-        <Key value="N" onClick={onClick} status={charStatuses["N"]} />
-        <Key value="M" onClick={onClick} status={charStatuses["M"]} />
-        <Key value="Ö" onClick={onClick} status={charStatuses["Ö"]} />
-        <Key value="Ç" onClick={onClick} status={charStatuses["Ç"]} />
+        <Key value="z" onClick={onClick} status={charStatuses["z"]} />
+        <Key value="x" onClick={onClick} status={charStatuses["x"]} />
+        <Key value="c" onClick={onClick} status={charStatuses["c"]} />
+        <Key value="v" onClick={onClick} status={charStatuses["v"]} />
+        <Key value="b" onClick={onClick} status={charStatuses["b"]} />
+        <Key value="n" onClick={onClick} status={charStatuses["n"]} />
+        <Key value="m" onClick={onClick} status={charStatuses["m"]} />
+        <Key value="ö" onClick={onClick} status={charStatuses["ö"]} />
+        <Key value="ç" onClick={onClick} status={charStatuses["ç"]} />
         <Key width={65.4} value="DELETE" onClick={onClick}>
           Delete
         </Key>
