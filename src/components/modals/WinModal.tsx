@@ -9,8 +9,6 @@ type Props = {
   guesses: string[];
 };
 
-import React from 'react';
-
 function App() {
   
   function refreshPage() {
