@@ -61,7 +61,7 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
                       >
                         koda burdan gidebilirsiniz
                       </a>{" "}
-                      and{" "}
+                      ve{" "}
                       <a
                         href="https://www.powerlanguage.co.uk/wordle/"
                         className="underline font-bold"
