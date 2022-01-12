@@ -63,7 +63,7 @@ export const WinModal = ({ isOpen, handleClose, guesses }: Props) => {
                   </Dialog.Title>
                   <div className="mt-2">
                     <MiniGrid guesses={guesses} />
-                    <p className="text-sm text-gray-500">Great job.</p>
+                    <p className="text-sm text-gray-500">Bakalım sıradakini yapabilecek misin?</p>
                   </div>
                 </div>
               </div>
@@ -73,7 +73,7 @@ export const WinModal = ({ isOpen, handleClose, guesses }: Props) => {
                   className="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
                   onClick={handleClose}
                 >
-                  Exit
+                  Kapat
                 </button>
               </div>
             </div>
