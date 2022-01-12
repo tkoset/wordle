@@ -2,8 +2,6 @@ import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { CheckIcon } from "@heroicons/react/outline";
 import { MiniGrid } from "../mini-grid/MiniGrid";
-import React from 'react';
-import { View, Text } from 'react-native';
 
 type Props = {
   isOpen: boolean;
@@ -12,17 +10,13 @@ type Props = {
 };
 
   
-const Container = () => {
-  const [key, setKey] = React.useState(0);
-  const reload = React.useCallback(() => setKey((prevKey) => prevKey + 1), []);
-  return <Child reload={reload} key={key} />;
-}
-
-const Child = ({ reload }) => {
-  const getRandomId = () => parseInt(Math.random() * 100, 10);
-  // We use useRef to showcase that the view is fully re-rendered. Use ref is initialized once per lifecycle of the React component
-  const id = React.useRef(getRandomId());
+export const WinModal = ({ isOpen, handleClose, guesses }: Props) => {
   return (
+    <Transition.Root show={isOpen} as={Fragment}>
+      <Dialog
+        as="div"
+        className="fixed z-10 inset-0 overflow-y-auto"
+        onClose={handleClose}
       >
         <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
           <Transition.Child
@@ -78,7 +72,7 @@ const Child = ({ reload }) => {
                 <button
                   type="button"
                   className="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
-                  onPress={reload} 
+                  onClick={handleClose} 
                 >
                   Kapat
                 </button>
