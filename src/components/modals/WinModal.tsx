@@ -9,6 +9,14 @@ type Props = {
   guesses: string[];
 };
 
+import React from 'react';
+
+function App() {
+  
+  function refreshPage() {
+    window.location.reload(false);
+  }
+  
 export const WinModal = ({ isOpen, handleClose, guesses }: Props) => {
   return (
     <Transition.Root show={isOpen} as={Fragment}>
@@ -71,7 +79,7 @@ export const WinModal = ({ isOpen, handleClose, guesses }: Props) => {
                 <button
                   type="button"
                   className="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
-                  onClick={handleClose}
+                  onClick={refreshPage}
                 >
                   Kapat
                 </button>
