@@ -5,13 +5,7 @@ import { MiniGrid } from "../mini-grid/MiniGrid";
 
 type Props = {
   isOpen: boolean;
-  handleClose: () => {
-
-    setShow(false)
-
-    reload();
-
-  };
+  handleClose: () => void;
   guesses: string[];
 };
 
