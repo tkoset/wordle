@@ -11,7 +11,7 @@ export const isWinningWord = (word: string) => {
 export const getWordOfDay = () => {
   const index = Math.floor(Math.random() * 5507);
   
-  return WORDS[index].toUpperCase();
+  return WORDS[index];
 };
 
 export const solution = getWordOfDay();
