@@ -9,11 +9,6 @@ type Props = {
   guesses: string[];
 };
 
-function App() {
-  
-  function refreshPage() {
-    window.location.reload(false);
-  }
   
 export const WinModal = ({ isOpen, handleClose, guesses }: Props) => {
   return (
