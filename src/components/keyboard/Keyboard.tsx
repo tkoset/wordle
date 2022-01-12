@@ -17,7 +17,7 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
     if (value === "ENTER") {
       return onEnter();
     }
-    if (value === "DELETE") {
+    if (value === "DEL") {
       return onDelete();
     }
     return onChar(value);
@@ -62,7 +62,7 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
         <Key value="m" onClick={onClick} status={charStatuses["m"]} />
         <Key value="ö" onClick={onClick} status={charStatuses["ö"]} />
         <Key value="ç" onClick={onClick} status={charStatuses["ç"]} />
-        <Key width={65.4} value="DELETE" onClick={onClick}>
+        <Key width={65.4} value="DEL" onClick={onClick}>
           Delete
         </Key>
       </div>
