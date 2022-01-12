@@ -24,7 +24,7 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
   };
 
   return (
-    <div>
+    <div lang="tr">
       <div className="flex justify-center mb-1">
         <Key value="e" onClick={onClick} status={charStatuses["e"]} />
         <Key value="r" onClick={onClick} status={charStatuses["r"]} />
