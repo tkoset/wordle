@@ -50,7 +50,7 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
                     as="h3"
                     className="text-lg leading-6 font-medium text-gray-900"
                   >
-                    About
+                    Hakkında
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
