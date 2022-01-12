@@ -1,5 +1,5 @@
 export const WORDS = [
-  "abadi",
+"abadi",
 "abani",
 "abide",
 "abiye",
