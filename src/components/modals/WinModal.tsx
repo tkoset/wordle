@@ -5,14 +5,16 @@ import { MiniGrid } from "../mini-grid/MiniGrid";
 
 type Props = {
   isOpen: boolean;
-  handleClose: () => void;
+  handleClose: () => {
+
+    setShow(false)
+
+    reload();
+
+  };
   guesses: string[];
 };
 
-export const handleClose = () => {
-    setShow(false)
-    reload();
-  };
 
 export const WinModal = ({ isOpen, handleClose, guesses }: Props) => {
   return (
