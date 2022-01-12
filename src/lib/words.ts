@@ -13,7 +13,8 @@ export const getWordOfDay = () => {
   const epochMs = 1641013200000;
   const now = Date.now();
   const msInDay = 86400000;
-  const index = Math.floorMod(((now - epochMs) / msInDay),5);
+  const ondex = Math.floor((now - epochMs) / msInDay);
+  const index = Math.floorMod(ondex,5);
   
   return WORDS[index].toUpperCase();
 };
