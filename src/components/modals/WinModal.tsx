@@ -9,8 +9,6 @@ import { MiniGrid } from "../mini-grid/MiniGrid";
   guesses: string[];
 };
 
-const reload=()=>window.location.reload();
-
 export const WinModal = ({ isOpen, reload, guesses }: Props) => {
   return (
     <Transition.Root show={isOpen} as={Fragment}>
