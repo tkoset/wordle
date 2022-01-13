@@ -8,8 +8,10 @@
 
 .text-xs {
 text-transform: uppercase;
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
 }
 
 .text-lg {
 text-transform: uppercase;
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
 }
