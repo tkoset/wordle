@@ -11,9 +11,9 @@ export const Cell = ({ value, status }: Props) => {
     "w-14 h-14 border-solid border-2 flex items-center justify-center mx-0.5 text-lg font-bold rounded",
     {
       "bg-white border-slate-200": !status,
-      "bg-gray-400 text-white border-slate-400": status === "absent",
+      "bg-gray-300 text-white border-gray-300": status === "absent",
       "bg-green-500 text-white border-green-500": status === "correct",
-      "bg-yellow-400 text-white border-yellow-500": status === "present",
+      "bg-yellow-400 text-white border-yellow-400": status === "present",
     }
   );
 
