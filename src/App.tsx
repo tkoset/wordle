@@ -63,7 +63,7 @@ function App() {
 
   return (
     <div className="py-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
-      <Alert message="Bu bir "\n" kelime mi?" isOpen={isWordNotFoundAlertOpen} />
+      <Alert message="Bu bir kelime mi?" message="Değil!" isOpen={isWordNotFoundAlertOpen} />
       <Alert
         message={`Bulamadın, cevap:{“\n”}${solution}`}
         isOpen={isGameLost}
