@@ -80,8 +80,6 @@ export const WinModal = ({ isOpen, handleClose, guesses }: Props) => {
           </Transition.Child>
         </div>
       </Dialog>
-    
-        window.location.reload();
     </Transition.Root>
   );
 };
