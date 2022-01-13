@@ -3,6 +3,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { Alert } from "../alerts/Alert";
 import { CheckIcon } from "@heroicons/react/outline";
 import { MiniGrid } from "../mini-grid/MiniGrid";
+import { solution } from "./lib/words";
 
  type Props = {
   isOpen: boolean;
