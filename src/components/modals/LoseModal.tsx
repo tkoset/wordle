@@ -62,7 +62,9 @@ export const LoseModal = ({ isOpen, handleClose, guesses }: Props) => {
                     Malesef, cevap olacaktı
                   </Dialog.Title>
                   <div className="mt-2">
-                    <MiniGrid guesses={guesses} />
+                    <Alert
+        message={`Cevap ${solution} olacaktı`}
+                   />
                     <p className="text-sm text-gray-500">Belki sıradakini yaparsın, üzülme!</p>
                   </div>
                 </div>
