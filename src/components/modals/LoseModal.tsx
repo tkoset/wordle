@@ -59,7 +59,7 @@ export const LoseModal = ({ isOpen, handleClose, guesses }: Props) => {
                     as="h3"
                     className="text-lg leading-6 font-medium text-gray-900"
                   >
-                    Malesef, cevap olacaktı
+                    Malesef, cevap Cevap ${solution} olacaktı
                   </Dialog.Title>
                   <div className="mt-2">
                     <MiniGrid guesses={guesses} />
