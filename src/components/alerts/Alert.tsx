@@ -14,7 +14,7 @@ export const Alert = ({ isOpen, message }: Props) => {
       enter="ease-out duration-300 transition"
       enterFrom="opacity-0"
       enterTo="opacity-100"
-      duration="1200"
+      timeout="1200"
       leave="transition ease-in duration-100"
       leaveFrom="opacity-100"
       leaveTo="opacity-0"
