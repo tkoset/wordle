@@ -1,6 +1,7 @@
 import { KeyValue } from "../../lib/keyboard";
 import { getStatuses } from "../../lib/statuses";
 import { Key } from "./Key";
+import { CheckIcon } from "@heroicons/react/outline";
 
 type Props = {
   onChar: (value: string) => void;
