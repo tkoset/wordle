@@ -7,7 +7,7 @@ import { AboutModal } from "./components/modals/AboutModal";
 import { InfoModal } from "./components/modals/InfoModal";
 import { WinModal } from "./components/modals/WinModal";
 import { LoseModal } from "./components/modals/LoseModal";
-import { isWordInWordList, isWinningWord, solution } from "./lib/words";
+import { isWordInWordList, isWinningWord } from "./lib/words";
 
 function App() {
   const [guesses, setGuesses] = useState<string[]>([]);
@@ -74,10 +74,6 @@ function App() {
   return (
     <div lang="tr" className="py-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
       <Alert message="Bu bir kelime mi?" isOpen={isWordNotFoundAlertOpen} />
-      <Alert
-        message={`Cevap ${solution} olacaktı`}
-        isOpen={isGameLost}
-      />
       
       <div className="flex w-80 mx-auto items-center mb-8">
         <h1 className="text-xl grow font-bold">5Harf</h1>
