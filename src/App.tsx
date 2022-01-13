@@ -41,14 +41,6 @@ function App() {
         setIsWordNotFoundAlertOpen(false);
       }, 2000);
     }
-
-    const handleClose = () => {
-
-    setShow(false)
-
-    reload();
-
-  };
     
     const winningWord = isWinningWord(currentGuess);
 
