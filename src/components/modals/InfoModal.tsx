@@ -68,7 +68,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
                       <Cell value="n" />
                     </div>
                     <p className="text-sm text-gray-500">
-                      "p" harfi kelimede geçiyor ve yerini de doğru tahmin ettiniz.
+                      "P" harfi kelimede geçiyor ve yerini de doğru tahmin ettiniz.
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
@@ -79,7 +79,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
                       <Cell value="k" />
                     </div>
                     <p className="text-sm text-gray-500">
-                      "r" harfi kelimede geçiyor ama yeri yanlış.
+                      "R" harfi kelimede geçiyor ama yeri yanlış.
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
@@ -90,7 +90,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
                       <Cell value="m" />
                     </div>
                     <p className="text-sm text-gray-500">
-                      "u" harfi kelimede geçmiyor.
+                      "U" harfi kelimede geçmiyor.
                     </p>
                   </div>
                 </div>
