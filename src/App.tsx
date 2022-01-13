@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {
     if (isGameWon) {
       setIsWinModalOpen(true);
-      setTimeout(function(){window.location.reload(); }, 5000);
+      setTimeout(function(){window.location.reload(); }, 10000);
     }
   }, [isGameWon]);
 
@@ -57,7 +57,7 @@ function App() {
         setIsGameLost(true);
         return setTimeout(() => {
           setIsGameLost(false);
-          window.location.reload();
+          setTimeout(function(){window.location.reload(); }, 10000);
         }, 2000);
       }
     }
