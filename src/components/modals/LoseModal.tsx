@@ -55,7 +55,7 @@ export const LoseModal = ({ isOpen, handleClose, guesses, solution }: Props) => 
                     aria-hidden="true"
                   />
                 </div>
-                <div className="mt-3 text-center sm:mt-5">
+                <div lang="TR" className="mt-3 text-center sm:mt-5">
                   <Dialog.Title
                     as="h3"
                     className="text-lg leading-6 font-medium text-gray-900 dark:text-white"
