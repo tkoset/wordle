@@ -16,7 +16,6 @@ export const WinModal = ({ isOpen, handleClose, guesses }: Props) => {
         as="div"
         className="fixed z-10 inset-0 overflow-y-auto"
         onClose={handleClose}
-        window.location.reload();
       >
         <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
           <Transition.Child
@@ -81,6 +80,8 @@ export const WinModal = ({ isOpen, handleClose, guesses }: Props) => {
           </Transition.Child>
         </div>
       </Dialog>
+    
+        window.location.reload();
     </Transition.Root>
   );
 };
