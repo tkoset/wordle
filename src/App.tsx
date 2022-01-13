@@ -73,7 +73,11 @@ function App() {
 
   return (
     <div lang="tr" className="py-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
-      <Alert message="Bu bir ${solution} kelime mi?" isOpen={isWordNotFoundAlertOpen} />
+      <Alert message="Bu bir kelime mi?" isOpen={isWordNotFoundAlertOpen} />
+      <Alert
+        message={`Cevap ${solution} olacaktı`}
+        isOpen={isGameLost}
+      />
       
       <div className="flex w-80 mx-auto items-center mb-8">
         <h1 className="text-xl grow font-bold">5Harf</h1>
