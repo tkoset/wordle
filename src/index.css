@@ -16,7 +16,8 @@ text-transform: uppercase;
     -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
 }
 
-p-4 {
-text-transform: uppercase;
-    -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+
+.text-sm.text-center.font-medium.text-gray-900 {
+    font-weight: 700;
+    text-transform: uppercase;
 }
