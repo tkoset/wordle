@@ -50,6 +50,7 @@ function App() {
 
       if (winningWord) {
         return setIsGameWon(true);
+        window.location.reload();
       }
 
       if (guesses.length === 5) {
