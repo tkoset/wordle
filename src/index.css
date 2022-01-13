@@ -16,7 +16,7 @@ text-transform: uppercase;
     -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
 }
 
-.p-4 {
+p-4 {
 text-transform: uppercase;
     -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
 }
