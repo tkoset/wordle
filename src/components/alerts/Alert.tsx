@@ -11,10 +11,9 @@ export const Alert = ({ isOpen, message }: Props) => {
     <Transition
       show={isOpen}
       as={Fragment}
-      enter="ease-out duration-300 transition"
+      enter="ease-out duration-1000 transition"
       enterFrom="opacity-0"
       enterTo="opacity-100"
-      timeout="1200"
       leave="transition ease-in duration-100"
       leaveFrom="opacity-100"
       leaveTo="opacity-0"
