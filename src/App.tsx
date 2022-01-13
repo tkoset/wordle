@@ -85,6 +85,8 @@ function App() {
       <WinModal
         isOpen={isWinModalOpen}
         handleClose={() => setIsWinModalOpen(false)}
+        onHide={handleClose}
+        onHide={callback}
         guesses={guesses}
       />
       <InfoModal
