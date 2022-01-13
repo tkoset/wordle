@@ -77,7 +77,6 @@ export const WinModal = ({ isOpen, handleClose, guesses }: Props) => {
                 </button>
               </div>
             </div>
-        window.location.reload();
           </Transition.Child>
        </div>
       </Dialog>
