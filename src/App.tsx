@@ -6,6 +6,7 @@ import { Keyboard } from "./components/keyboard/Keyboard";
 import { AboutModal } from "./components/modals/AboutModal";
 import { InfoModal } from "./components/modals/InfoModal";
 import { WinModal } from "./components/modals/WinModal";
+import { LoseModal } from "./components/modals/LoseModal";
 import { isWordInWordList, isWinningWord, solution } from "./lib/words";
 
 function App() {
@@ -24,6 +25,13 @@ function App() {
       setTimeout(function(){window.location.reload(); }, 10000);
     }
   }, [isGameWon]);
+  
+  useEffect(() => {
+    if (isGameLost) {
+      setIsLoseModalOpen(true);
+      setTimeout(function(){window.location.reload(); }, 10000);
+    }
+  }, [isGameLost]);
 
   const onChar = (value: string) => {
     if (currentGuess.length < 5 && guesses.length < 6) {
@@ -57,7 +65,6 @@ function App() {
         setIsGameLost(true);
         return setTimeout(() => {
           setIsGameLost(false);
-          setTimeout(function(){window.location.reload(); }, 10000);
         }, 2000);
       }
     }
@@ -66,10 +73,7 @@ function App() {
   return (
     <div lang="tr" className="py-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
       <Alert message="Bu bir kelime mi?" isOpen={isWordNotFoundAlertOpen} />
-      <Alert
-        message={`Cevap ${solution} olacaktı`}
-        isOpen={isGameLost}
-      />
+      
       <div className="flex w-80 mx-auto items-center mb-8">
         <h1 className="text-xl grow font-bold">5Harf</h1>
         <InformationCircleIcon
@@ -87,6 +91,11 @@ function App() {
       <WinModal
         isOpen={isWinModalOpen}
         handleClose={() => setIsWinModalOpen(false)}
+        guesses={guesses}
+      />
+      <LoseModal
+        isOpen={isLoseModalOpen}
+        handleClose={() => setIsLoseModalOpen(false)}
         guesses={guesses}
       />
       <InfoModal
