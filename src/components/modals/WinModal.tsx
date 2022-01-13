@@ -4,14 +4,10 @@ import { CheckIcon } from "@heroicons/react/outline";
 import { MiniGrid } from "../mini-grid/MiniGrid";
 import React from 'react';
 
-function App() {
-  
-  function refreshPage() {
-    window.location.reload(false);
-  }
   
 type Props = {
   isOpen: boolean;
+  refreshPage: window.location.reload(false);
   guesses: string[];
 };
 
