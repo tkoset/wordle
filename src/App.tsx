@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {
     if (isGameWon) {
       setIsWinModalOpen(true);
-      setTimeout(function(){ location.reload(); }, 5000);
+      setTimeout(function(){window.location.reload(); }, 5000);
     }
   }, [isGameWon]);
 
