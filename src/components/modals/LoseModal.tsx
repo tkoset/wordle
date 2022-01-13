@@ -65,6 +65,7 @@ export const LoseModal = ({ isOpen, handleClose, guesses }: Props) => {
                   <div className="mt-2">
                     <Alert
         message={`Cevap ${solution} olacaktı`}
+                     isOpen={isGameLost}
                    />
                     <p className="text-sm text-gray-500">Belki sıradakini yaparsın, üzülme!</p>
                   </div>
