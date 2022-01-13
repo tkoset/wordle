@@ -7,7 +7,7 @@ import { AboutModal } from "./components/modals/AboutModal";
 import { InfoModal } from "./components/modals/InfoModal";
 import { WinModal } from "./components/modals/WinModal";
 import { LoseModal } from "./components/modals/LoseModal";
-import { isWordInWordList, isWinningWord } from "./lib/words";
+import { isWordInWordList, isWinningWord, solution } from "./lib/words";
 
 function App() {
   const [guesses, setGuesses] = useState<string[]>([]);
@@ -98,6 +98,7 @@ function App() {
         isOpen={isLoseModalOpen}
         handleClose={() => setIsLoseModalOpen(false)}
         guesses={guesses}
+        solution={solution}
       />
       <InfoModal
         isOpen={isInfoModalOpen}
