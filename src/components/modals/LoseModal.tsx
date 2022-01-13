@@ -1,17 +1,16 @@
 import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { Alert } from "../alerts/Alert";
 import { CheckIcon } from "@heroicons/react/outline";
 import { MiniGrid } from "../mini-grid/MiniGrid";
-import { solution } from "../../lib/words";
 
- type Props = {
+type Props = {
   isOpen: boolean;
   handleClose: () => void;
   guesses: string[];
+  solution: string;
 };
 
-export const LoseModal = ({ isOpen, handleClose, guesses }: Props) => {
+export const LoseModal = ({ isOpen, handleClose, guesses, solution }: Props) => {
   return (
     <Transition.Root show={isOpen} as={Fragment}>
       <Dialog
@@ -48,42 +47,39 @@ export const LoseModal = ({ isOpen, handleClose, guesses }: Props) => {
             leaveFrom="opacity-100 translate-y-0 sm:scale-100"
             leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
-            <div className="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+            <div className="inline-block align-bottom bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
               <div>
-                <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100">
-                  <CheckIcon
-                    className="h-6 w-6 text-green-600"
+                <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-red-200">
+                  <XIcon
+                    className="h-6 w-6 text-red-600"
                     aria-hidden="true"
                   />
                 </div>
                 <div className="mt-3 text-center sm:mt-5">
                   <Dialog.Title
                     as="h3"
-                    className="text-lg leading-6 font-medium text-gray-900"
+                    className="text-lg leading-6 font-medium text-gray-900 dark:text-white"
                   >
-                    Malesef, cevap olacaktı
+                   bulamadın
                   </Dialog.Title>
                   <div className="mt-2">
-                    <Alert
-        message={`Cevap ${solution} olacaktı`}
-                     isOpen={isGameLost}
-                   />
-                    <p className="text-sm text-gray-500">Belki sıradakini yaparsın, üzülme!</p>
+                    <MiniGrid guesses={guesses} />
+                    <p className="text-sm text-gray-500 dark:text-gray-400">cevap <b className="text-pink-600 dark:text-pink-500">{solution}</b> olacaktı</p>
                   </div>
                 </div>
               </div>
               <div className="mt-5 sm:mt-6">
                 <button
                   type="button"
-                  className="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
+                  className="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:text-sm"
                   onClick={handleClose}
                 >
-                  Kapat
+                  Chiudi
                 </button>
               </div>
             </div>
           </Transition.Child>
-       </div>
+        </div>
       </Dialog>
     </Transition.Root>
   );
