@@ -84,12 +84,4 @@ export const WinModal = ({ isOpen, handleClose, guesses }: Props) => {
   );
 };
 
-<script>
-// Attach event listener to first close popup and then refresh page
-        document.getElementById(
-'refresh').addEventListener('click', (e) => {
-            document.getElementById(
-'refreshwrap').style.visibility = "hidden";
-            window.location.reload();
-        });
-    </script>
+
