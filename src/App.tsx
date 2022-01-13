@@ -21,8 +21,8 @@ function App() {
   useEffect(() => {
     if (isGameWon) {
       setIsWinModalOpen(true);
+      setTimeout(function(){ location.reload(); }, 5000);
     }
-      window.location.reload();
   }, [isGameWon]);
 
   const onChar = (value: string) => {
