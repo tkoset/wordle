@@ -84,3 +84,5 @@ export const WinModal = ({ isOpen, handleClose, guesses }: Props) => {
   );
 };
 
+const reload=()=>window.location.reload();
+
