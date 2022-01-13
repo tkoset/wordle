@@ -61,14 +61,14 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="s" status="correct" />
+                      <Cell value="p" status="correct" />
                       <Cell value="e" />
                       <Cell value="r" />
-                      <Cell value="i" />
+                      <Cell value="o" />
                       <Cell value="n" />
                     </div>
                     <p className="text-sm text-gray-500">
-                      "s" harfi kelimede geçiyor ve yerini de doğru tahmin ettiniz.
+                      "p" harfi kelimede geçiyor ve yerini de doğru tahmin ettiniz.
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
