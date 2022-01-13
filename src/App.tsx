@@ -42,6 +42,14 @@ function App() {
       }, 2000);
     }
 
+    const handleClose = () => {
+
+    setShow(false)
+
+    reload();
+
+  };
+    
     const winningWord = isWinningWord(currentGuess);
 
     if (currentGuess.length === 5 && guesses.length < 6 && !isGameWon) {
@@ -85,8 +93,6 @@ function App() {
       <WinModal
         isOpen={isWinModalOpen}
         handleClose={() => setIsWinModalOpen(false)}
-        onHide={handleClose}
-        onHide={callback}
         guesses={guesses}
       />
       <InfoModal
