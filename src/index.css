@@ -28,11 +28,10 @@ text-transform: uppercase;
 
 
 button {
-  width: 160px;
   background-color:blue;
           transition: all 4s ease;
           animation: imganim 4s infinite linear both;
-
+          animation-fill-mode: forwards;
 }
 
 
