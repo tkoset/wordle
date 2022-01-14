@@ -63,7 +63,7 @@ export const WinModal = ({ isOpen, handleClose, guesses }: Props) => {
                   </Dialog.Title>
                   <div className="mt-2">
                     <MiniGrid guesses={guesses} />
-                    <p className="text-sm text-gray-500">Bakalım sıradakini yapabilecek misin!</p>
+                    <p className="text-sm text-gray-500">Bakalım sıradakini bulabilecek misin!</p>
                   </div>
                 </div>
               </div>
