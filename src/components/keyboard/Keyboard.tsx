@@ -54,7 +54,7 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
       <div className="flex justify-center">
         <Key width={65.4} value="ENTER" onClick={onClick}>
           <CheckCircleIcon
-                    className="text-base font-bold bg-gray-200 hover:bg-gray-300 active:bg-gray-400"
+                    className="h-4 w-4 bg-gray-200 hover:bg-gray-300 active:bg-gray-400"
                     aria-hidden="true"
                   />
         </Key>
