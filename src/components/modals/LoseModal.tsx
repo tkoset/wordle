@@ -55,7 +55,7 @@ export const LoseModal = ({ isOpen, handleClose, guesses, solution }: Props) => 
                     aria-hidden="true"
                   />
                 </div>
-                <div lang="TR" className="mt-3 text-center sm:mt-5">
+                <div lang="tr" className="mt-3 text-center sm:mt-5">
                   <Dialog.Title
                     as="h3"
                     className="text-lg leading-6 font-medium text-gray-900 dark:text-white"
@@ -64,7 +64,7 @@ export const LoseModal = ({ isOpen, handleClose, guesses, solution }: Props) => 
                   </Dialog.Title>
                   <div className="mt-2">
                     <MiniGrid guesses={guesses} />
-                    <p className="text-base text-gray-500 dark:text-gray-400">cevap <b lang="TR" className="text-green-900 dark:text-green-800">{solution}</b> olacaktı</p>
+                    <p className="text-base text-gray-500 dark:text-gray-400">cevap <b className="text-green-900 dark:text-green-800">{solution}</b> olacaktı</p>
                   </div>
                 </div>
               </div>
