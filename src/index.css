@@ -32,6 +32,7 @@ button {
           transition: all 4s ease;
           animation: imganim 4s infinite linear both;
           animation-fill-mode: forwards;
+          -webkit-animation-fill-mode: forwards;
 }
 
 
