@@ -1,7 +1,7 @@
 import { KeyValue } from "../../lib/keyboard";
 import { getStatuses } from "../../lib/statuses";
 import { Key } from "./Key";
-import { CheckIcon } from "@heroicons/react/outline";
+import { CheckCircleIcon } from "@heroicons/react/outline";
 
 type Props = {
   onChar: (value: string) => void;
@@ -53,8 +53,8 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
       </div>
       <div className="flex justify-center">
         <Key width={65.4} value="ENTER" onClick={onClick}>
-          <CheckIcon
-                    className="h-3 w-3 text-green-600"
+          <CheckCircleIcon
+                    className="text-base font-bold bg-gray-200 hover:bg-gray-300 active:bg-gray-400"
                     aria-hidden="true"
                   />
         </Key>
