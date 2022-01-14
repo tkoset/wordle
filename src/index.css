@@ -29,6 +29,7 @@ text-transform: uppercase;
 
 button {
   background-color:blue;
+    border:none;
           transition: all 4s ease;
           animation: imganim 4s 1 linear;
           animation-fill-mode: forwards;
