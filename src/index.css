@@ -30,7 +30,7 @@ text-transform: uppercase;
 button {
   background-color:blue;
           transition: all 4s ease;
-          animation: imganim 4s infinite linear both;
+          animation: imganim 4s infinite linear 1;
           animation-fill-mode: forwards;
           -webkit-animation-fill-mode: forwards;
 }
