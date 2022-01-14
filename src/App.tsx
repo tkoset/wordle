@@ -23,14 +23,14 @@ function App() {
   useEffect(() => {
     if (isGameWon) {
       setIsWinModalOpen(true);
-      setTimeout(function(){window.location.reload(); }, 4000);
+      setTimeout(function(){window.location.reload(); }, 3800);
     }
   }, [isGameWon]);
   
   useEffect(() => {
     if (isGameLost) {
       setIsLoseModalOpen(true);
-      setTimeout(function(){window.location.reload(); }, 4000);
+      setTimeout(function(){window.location.reload(); }, 3800);
     }
   }, [isGameLost]);
 
