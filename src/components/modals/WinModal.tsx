@@ -70,7 +70,7 @@ export const WinModal = ({ isOpen, handleClose, guesses }: Props) => {
               <div className="mt-5 sm:mt-6">
                 <button
                   type="button"
-                  className="inline-flex justify-center w-full rounded-md px-4 py-2 bg-indigo-600 text-base font-medium text-white sm:text-sm"
+                  className="inline-flex justify-center w-full rounded-md px-4 py-2 bg-blue-600 text-base font-medium text-white sm:text-sm focus:outline-none"
                   onClick={handleClose}
                 >
                 </button>
