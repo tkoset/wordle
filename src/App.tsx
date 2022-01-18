@@ -30,7 +30,7 @@ function App() {
   useEffect(() => {
     if (isGameLost) {
       setIsLoseModalOpen(true);
-      setTimeout(function(){window.location.reload(); }, 380000000);
+      setTimeout(function(){window.location.reload(); }, 3800);
     }
   }, [isGameLost]);
 
